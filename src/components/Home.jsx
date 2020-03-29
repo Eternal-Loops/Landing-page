@@ -176,6 +176,7 @@ const Look=styled.div`
     height:auto;
     color:white;
     background-color:#116979;
+    overflow:hidden;
     }
 
 `;
@@ -190,7 +191,9 @@ const Welcome = styled.div`
     padding-bottom:190px;
     padding-left:180px;
     display:flex;
-    justifyContent: "space-between";}
+    justifyContent: "space-between";
+     overflow:hidden;
+    }
 `;
 
 
