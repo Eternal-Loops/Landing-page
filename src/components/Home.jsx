@@ -33,17 +33,15 @@ export default class Home extends Component{
                 <Fragment>
                 <Welcome id="cover" className="position-relative overflow-hidden p-3 p-md-5 ">
                     <Col md={6} className="p-lg-6 mx-auto my-1 aos-all" data-aos="fade-up"  data-aos-duration="2000" >
-                        <H1>Your Solution !</H1>
-                        <Paragraph className="lead" >The more we do this - the more it will do good things to our heart.
-                            You need the dark in order to show the light. We don't have to be committed.
-                            We are just playing here. With something so strong, a little bit can go a long way.</Paragraph>
-
+                        <H1>Wujudkan Ide Anda,</H1>
+                        <H1>Bersama Eternal Loops!</H1>
+                        <Paragraph className="lead" >Website Developer, Android Developer, IoT Developer.</Paragraph>
                         <Link href='/about'>
-                            <Button variant='outline-success' style={{marginRight:'5px'}} >Our Story</Button>
+                            <Button variant='outline-success' style={{marginRight:'5px'}} >Cerita Kami</Button>
 
                         </Link>
                         <Link href="#do">
-                            <Button variant='outline-success' >What We Do</Button>
+                            <Button variant='outline-success' >Solusi Untuk Anda</Button>
                         </Link>
                     </Col>
                 </Welcome>
@@ -52,7 +50,7 @@ export default class Home extends Component{
                 <Container style={{maxWidth:'870px'}}>
                         <Head >
                             <h3 id="do" className="aos-all aos-animate" data-aos="zoom-in-right" data-aos-duration="500" data-aos-offset="200"
-                                data-aos-easing="ease-in-sine" >What Can You Request ?</h3>
+                                data-aos-easing="ease-in-sine" >Yang Kami Tawarkan ?</h3>
                         </Head>
 
 
@@ -68,7 +66,7 @@ export default class Home extends Component{
                         <Col md="auto aos-all aos-animate" data-aos="zoom-in" data-aos-duration="1000" style={{borderRight: "solid 1px #dadada"}}>
                             <Link href='/works' style={{textDecoration:'none'}}><br/>
                                 <Image src={mobile} alt="mobile" style={Styles.icon}/><br/>
-                                <H>Your Amazing Mobile Apps</H>
+                                <H>Amazing Mobile Apps</H>
                             </Link>
                         </Col>
                         <Col md="auto aos-all aos-animate" data-aos="zoom-in-left" data-aos-duration="1000">
@@ -78,6 +76,21 @@ export default class Home extends Component{
                             </Link>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col md="6 centered aos-all aos-animate" data-aos="zoom-in" data-aos-duration="1000" style={{borderRight: "solid 1px #dadada"}}>
+                            <Link href='/works' style={{textDecoration:'none'}}><br/>
+                                <Image src={iot} alt="iot" style={Styles.icons}/><br/>
+                                <H style={{textAlign:'center'}}>Data Science</H>
+                            </Link>
+                        </Col>                                                                                                                                                                      
+                        <Col md="6 aos-all aos-animate" data-aos="zoom-in" data-aos-duration="1000">
+                            <Link href='/works' style={{textDecoration:'none'}}><br/>
+                                <Image src={iot} alt="iot" style={Styles.icons}/><br/>
+                                <H style={{textAlign:'center'}}>Computer Vision</H>
+                            </Link>
+                        </Col>
+                    </Row>
+
                 </Container>
 
 
@@ -87,7 +100,7 @@ export default class Home extends Component{
                         <Row>
                             <Head id="serve">
                                 <h3 className="aos-all aos-animate" data-aos="zoom-in-right" data-duration="500" data-aos-offset="100"
-                                    data-aos-easing="ease-in-sine" style={{color:'white'}}>How To Work With Us ?</h3>
+                                    data-aos-easing="ease-in-sine" style={{color:'white'}}>Alur Kerja Bersama Kami ?</h3>
                             </Head>
                         </Row>
 
@@ -98,7 +111,7 @@ export default class Home extends Component{
                                 <figure className='effect'>
                                     <img  src={idea} alt="website" style={Styles.img}/>
                                     <figcaption>
-                                        <h5>Consulting</h5>
+                                        <h5>Konsultasi</h5>
                                         <p>Planning and do briefing with our team to make custom web like you want with best quality and worth the price.</p>
 
                                     </figcaption>
@@ -110,7 +123,7 @@ export default class Home extends Component{
                                     <figure className='effect'>
                                         <img  src={contract} alt="website" style={Styles.img}/>
                                         <figcaption>
-                                            <h5>Contract</h5>
+                                            <h5>Kontrak Kerja</h5>
                                             <p>Making MoU with you and then our team will develop custom project special like your request.</p>
 
                                         </figcaption>
@@ -122,7 +135,7 @@ export default class Home extends Component{
                                 <figure className='effect'>
                                     <img  src={set} alt="website" style={Styles.img}/>
                                     <figcaption>
-                                        <h5>Maintenace</h5>
+                                        <h5>Pemeliharaan</h5>
                                         <p>After project completed we will maintenance your web to keep it work and minimalize error. </p>
                                     </figcaption>
                                 </figure>
@@ -137,7 +150,7 @@ export default class Home extends Component{
                         <Col md="auto aos-all aos-animate" data-aos="zoom-in-right" data-aos-duration="1000">
 
                                 <Link href="/">
-                                    <h3 style={Styles.link}> Look Our Portofolio </h3>
+                                    <h3 style={Styles.link}> Portofolio Kami ? </h3>
                                 </Link>
                         </Col>
                         </Row>
@@ -160,6 +173,12 @@ const Styles = {
         height:'200px',
         margin:'15px',
         textAlign:'center',
+    },
+    icons:{
+        height:'200px',
+        margin:'15px 100px',
+        textAlign:'center',
+        alignContent:'center'
     },
     link:{
         alignItems:'center',

@@ -7,13 +7,13 @@ export default class Footer extends Component{
         return(
             <Container>
                 <Row>
-                    <Col>Company</Col>
-                    <Col>About US</Col>
-                    <Col>Social Media</Col>
+                    <Col>Perusahan</Col>
+                    <Col>Tentang Kami</Col>
+                    <Col>Media Sosial</Col>
 
                 </Row>
                 <div>
-                    &copy;<span>{new Date().getFullYear()}</span> <a href="https://www.eternal-loops.science"> Eternal Loops </a>
+                    &copy;<span>{new Date().getFullYear()}</span> <a href="https://www.eternal-loops.com"> Eternal Loops </a>
                 </div>
             </Container>
 

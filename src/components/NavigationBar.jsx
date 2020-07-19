@@ -21,26 +21,26 @@ export default class NavigationBar extends Component {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
                     <Nav.Link href="/">
-                        Home
+                        Beranda
                     </Nav.Link>
                     <Nav.Link href="/about">
-                        About Us
+                        Tentang Kami
                     </Nav.Link>
                     <Nav.Link href="/our">
-                        Our Works
+                        Portofolio
                     </Nav.Link>
 
                     <Nav.Link href="/blog">
-                        Blog
+                        Artikel
                     </Nav.Link>
 
                     <Nav.Link href="/contact">
-                        Contact
+                        Kontak
                     </Nav.Link>
 
-                    <Link to="/whatsapp">
-                        <Button variant='outline-success'>Start A Project</Button>
-                    </Link>
+                    <a href="https://wa.me/+6285641937765">
+                        <Button variant='outline-success'>Ide Anda</Button>
+                    </a>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
